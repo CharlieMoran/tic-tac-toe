@@ -10,10 +10,15 @@ class Game extends Component {
       <div className="tic-tac-toe-game">
         <h1>Tic Tac Toe</h1>
         <div className="Board">
-          {/* RENDER NINE SQUARE COMPONENTS HERE.
-          PASS A PROP CALLED "value" THAT DETERMINES
-          WHETHER THE SQUARE DISPLAYS NOTHING, AN X,
-          OR AN O BASED ON THE VALUES IN board */}
+          <Square value={board[0]} />
+          <Square value={board[1]} />
+          <Square value={board[2]} />
+          <Square value={board[3]} />
+          <Square value={board[4]} />
+          <Square value={board[5]} />
+          <Square value={board[6]} />
+          <Square value={board[7]} />
+          <Square value={board[8]} />
         </div>
       </div>
     );
