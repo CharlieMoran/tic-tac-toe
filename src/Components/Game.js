@@ -6,12 +6,15 @@ const board = ["X", null, null, null, "O", "O", null, null, "X"];
 
 class Game extends Component {
   render() {
-    const squares = board.map((val, ind) => <Square key={ind} value={val} />);
-
     return (
       <div className="tic-tac-toe-game">
         <h1>Tic Tac Toe</h1>
-        <div className="Board">{squares}</div>
+        <div className="Board">
+          {/* RENDER NINE SQUARE COMPONENTS HERE.
+          PASS A PROP CALLED "value" THAT DETERMINES
+          WHETHER THE SQUARE DISPLAYS NOTHING, AN X,
+          OR AN O BASED ON THE VALUES IN board */}
+        </div>
       </div>
     );
   }
