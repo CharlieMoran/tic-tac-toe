@@ -1,8 +1,9 @@
 import { Component } from "react";
 import "./Square.css";
 
+
 function Square(props) {
-  return <div className="Square">{props.value}</div>;
+  return <div onClick={props.bananaClick} className="Square">{props.value}</div>;
 }
 
 export default Square;
